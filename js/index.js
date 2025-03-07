@@ -17,3 +17,26 @@ document.getElementById("donation").addEventListener('click',function(){
     toggleBtnColor('transction');
     document.getElementById("donation").classList.add("bg-[#B4F461]")
 })
+
+document.getElementById('donate1').addEventListener('click',function(){
+    const donatedAmount = donationAmount('donateamount1');
+    const prviousDonatedAmount = previousDonationAmount("total-donate-amount")
+    document.getElementById('total-donate-amount').innerText = donatedAmount+prviousDonatedAmount;
+    const initial = initialAmount("initail-balance")
+    document.getElementById("initail-balance").innerText = initial - donatedAmount;
+})
+document.getElementById('donate2').addEventListener('click',function(){
+    const donatedAmount = donationAmount('donateamount2');
+    const prviousDonatedAmount = previousDonationAmount("total-donate-amount2")
+    document.getElementById('total-donate-amount2').innerText = donatedAmount+prviousDonatedAmount;
+    const initial = initialAmount("initail-balance")
+    document.getElementById("initail-balance").innerText = initial - donatedAmount;
+})
+
+document.getElementById('donate3').addEventListener('click',function(){
+    const donatedAmount = donationAmount('donateamount3');
+    const prviousDonatedAmount = previousDonationAmount("total-donate-amount2")
+    document.getElementById('total-donate-amount3').innerText = donatedAmount+prviousDonatedAmount;
+    const initial = initialAmount("initail-balance")
+    document.getElementById("initail-balance").innerText = initial - donatedAmount;
+})
